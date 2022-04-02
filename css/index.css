@@ -52,11 +52,12 @@ header ul li a.active{
 section{
      position: relative;
      padding: 100px;
-     width: 100px;
+     width: 100%;
      height: 100vh;
      display: flex;
      justify-content: center;
      align-items: center;
+     overflow: hidden;
 }
 section::before{ /*trasparenza a fine immagine*/
      content: '';
@@ -70,28 +71,24 @@ section::before{ /*trasparenza a fine immagine*/
 section img{
      position: absolute;
      top: 0;
-     left: 0;
+     /*left:0*/
      width: 100%;
      height: 100%;
      object-fit: cover;
      pointer-events: none;
 }
 section img#applab{
-     width: 10px;
-     height: 10px;
+     width: 150px;
+     height: 150px;
      mix-blend-mode: screen;
 }
 
 section img#mountains_front{
      z-index: 10;
 }
-/*
-section img#moon{
-     mix-blend-mode: screen;
-}
-*/
 #text{
      position: absolute;
+     right: -350px;
      color: #fff;
      white-space: nowrap;
      font-size: 7.5vw;
@@ -112,7 +109,7 @@ section img#moon{
 .sec{
      position: relative;
      padding: 100px;
-     background: #5411c0;
+     background: #1c0522;
 }
 .sec h2{
      font-size: 3.5em;
@@ -123,8 +120,3 @@ section img#moon{
      font-size: 1.5em;
      color: #fff;
 }
-
-/*
-<img src="applab.png" alt=":(" id="applab">
-
-*/
